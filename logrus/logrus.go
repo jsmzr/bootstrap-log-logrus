@@ -1,8 +1,7 @@
 package logrus
 
 import (
-	"github.com/jiurongzhao/bootstrap-global/log"
-
+	"github.com/jsmzr/bootstrap-log/log"
 	"github.com/sirupsen/logrus"
 )
 

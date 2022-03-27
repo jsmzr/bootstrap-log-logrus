@@ -1,9 +1,9 @@
-module github.com/jiurongzhao/bootstrap-log-logrus
+module github.com/jsmzr/bootstrap-log-logrus
 
 go 1.17
 
 require (
-	github.com/jiurongzhao/bootstrap-global v0.0.1
+	github.com/jsmzr/bootstrap-log v0.0.2
 	github.com/sirupsen/logrus v1.8.1
 )
 

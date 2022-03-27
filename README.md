@@ -4,10 +4,10 @@ bottstrap 系列 log-logrus 日志适配器
 
 ## 使用说明
 
-1. 通过 `import (_ "bootstrap/log-logrus/logrus)"` 导入适配器
-2. 通过 `import "bootstrap/global/log"` 导入门面
-3. 通过 `err := log.InitGlobalLogger("logrus")` 进行初始化
-4. 代码中调用 `log.Info("message xxx", "foo", "boo")`
+1. 通过 `import (_ "github.com/jsmzr/bootstrap-log-logrus/logrus)"` 导入适配器
+2. 通过 `import "github.com/jsmzr/bootstrap-global/log"` 导入门面
+4. 通过 `err := log.InitLogger("logrus")` 进行初始化
+3. 代码引入`import "github.com/jsmzr/bootstrap-log/log` 调用 `log.Info("message %s", key)` 即可
 
 ## 开发说明
 
