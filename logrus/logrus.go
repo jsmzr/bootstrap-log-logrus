@@ -19,17 +19,16 @@ func (c *LogrusConfig) Load() (log.Logger, error) {
 }
 
 func (c *LogrusContainer) Debug(msg string, params ...interface{}) {
-	c.logger.Debug(append([]interface{}{msg}, params...)...)
+	c.logger.Debugf(msg, params...)
 }
 func (c *LogrusContainer) Info(msg string, params ...interface{}) {
-	c.logger.Info(append([]interface{}{msg}, params...)...)
+	c.logger.Infof(msg, params...)
 }
 func (c *LogrusContainer) Warn(msg string, params ...interface{}) {
-
-	c.logger.Warn(append([]interface{}{msg}, params...)...)
+	c.logger.Warnf(msg, params...)
 }
 func (c *LogrusContainer) Error(msg string, params ...interface{}) {
-	c.logger.Error(append([]interface{}{msg}, params...)...)
+	c.logger.Errorf(msg, params...)
 }
 
 func init() {
